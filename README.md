@@ -7,6 +7,8 @@
 <h1>Examining traffic inside a network</h1>
 This tutorial outlines the implementation of a network protocol analyzer(Wireshark) to examine traffic between Azure virtual machines on the same virtual network.<br />
 
+![Examining traffic inside a network](https://github.com/user-attachments/assets/3a12e9c8-eb5a-4a6b-bfd0-a5ceced03995)
+
 
 <h2>Environments and Technologies Used</h2>
 
@@ -83,7 +85,8 @@ After you have set those specifications before clicking "Review + create" click 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+With the virtual machines ready to go now we'll need a way to access them, for this lab we'll be using Microsoft Remote Desktop.
+To use it on a Windows computer you will just need to search for it on the searchbar located on the bottom left corner of your desktop and clicking on it once you have found it. In the case that you are using a Mac computer go to the apple menu then navigate to App Store and search for it there, install the app once you have found it.
 </p>
 <br />
 
@@ -91,14 +94,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+Now that we have Microsoft Remote Desktop we can connect to the virtual machines by inserting their public IP address then clicking connect and inserting the previosly created username and password, to find your windows-vm public IP address search for "Virtual Machines" inside of the Azure portal and look at the corresponding IP address below the "Public IP adress" column
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+Once inside of the windows-vm go to "Microsoft Edge" and search for "https://www.wireshark.org" using the searchbar. Now just click on download 
 </p>
 <br />
 
@@ -106,7 +109,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+Once inside of the windows-vm go to "Microsoft Edge" and search for "https://www.wireshark.org" using the searchbar. Now just click on download 
 </p>
 <br />
 
