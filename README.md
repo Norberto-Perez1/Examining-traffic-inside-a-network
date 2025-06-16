@@ -29,7 +29,7 @@ This tutorial outlines the implementation of a network protocol analyzer(Wiresha
 ![Resource group](https://github.com/user-attachments/assets/b6b52e77-d044-4d9a-ae2c-5d709f8ae9fd)
 
 <p>
-Start by creating a resource group inside of the Azure portal. To do this simply search for "Resource group" in the search bar at the top of the screen and once you have clicked on it, go over to "create" and click on that too. Set a name and Location and click on "Review + create" then click on "Create". The names used for resources in this lab are not obligatory but are created to be easy to read and to match their respective resource acourdingly.
+Start by creating a resource group inside of the Azure portal. To do this simply search for "Resource group" in the search bar at the top of the screen and once you have clicked on it, go over to "create" and click on that too. Set a name and Location and click on "Review + create" then click on "Create". The resource names used in this lab are optional but are chosen for clarity and to correspond to their respective components.
 </p>
 <br />
 
@@ -74,7 +74,7 @@ After you have set those specifications before clicking "Review + create" click 
 ![Mac rdp](https://github.com/user-attachments/assets/26c6a1f3-0859-4fa4-a572-5cebe6d5736e)
 
 <p>
-With the virtual machines ready to go now we'll need a way to access them, for this lab we'll be using Microsoft Remote Desktop.
+With the virtual machines deployed, we now need a way to access them. In this lab, we will use Microsoft Remote Desktop.
 To use it on a Windows computer you will just need to search for it on the searchbar located on the bottom left corner of your desktop and clicking on it once you have found it. In the case that you are using a Mac computer go to the apple menu then navigate to App Store and search for it there, install the app once you have found it.
 </p>
 <br />
@@ -103,7 +103,7 @@ With Wireshark now instaled search for it with the searchbar in your desktop and
 ![ping and traffic](https://github.com/user-attachments/assets/33330ea1-2078-4b55-bb26-5e058ee564ca)
 
 <p>
-In this step we will try to ping the linux-vm from our microsoft-vm using powershell and observe the traffic created inside of the icmp filter. To be able to ping the linux-vm we will need it's private IP, this can be found by going to Virtual Machines inside of the azure portal and selecting the linux-vm. Search and open "Windows PowerShell", once you are inside type "ping 10.0.0.5"(in this case 10.0.0.5 is the private IP address otherwise type the one you copied instead) and hit enter. Now traffic has appeared showing request from the windows-vm and replies from the linux-vm.
+In this step, we will ping the linux-vm from our windows-vm using PowerShell and observe the ICMP traffic captured by Wireshark. To be able to ping the linux-vm we will need it's private IP, this can be found by going to Virtual Machines inside of the azure portal and selecting the linux-vm. Search and open "Windows PowerShell", once you are inside type "ping 10.0.0.5"(in this case 10.0.0.5 is the private IP address otherwise type the one you copied instead) and hit enter. Now traffic has appeared showing request from the windows-vm and replies from the linux-vm.
 </p>
 <br />
 
@@ -117,6 +117,6 @@ Try filtering for RDP traffic now and observe how traffic is constantly comming 
 ![delete resource group](https://github.com/user-attachments/assets/5fac3fda-9232-484a-83ff-14071a853970)
 
 <p>
-This concludes the lab but I'll help you clean up before you go. We have 2 resource groups, 1 virtual network , and 2 virtual machines running. To eliminate all those resources we will head back to the Azure portal and then to resource groups, click on the "RG-Network-Activities" and once inside click on "delete resource group" and copy and paste the name were it asks you to (make sure to check the box to apply force delete on selected virtual machines). Repeart the same process for "NetworkWatcherRG" and you are done.
+This concludes the lab but I'll help you clean up before you go. We have 2 resource groups, 1 virtual network , and 2 virtual machines running. To eliminate all those resources we will head back to the Azure portal and then to resource groups, click on the "RG-Network-Activities" and once inside click on "delete resource group" and copy and paste the name were it asks you to (make sure to check the box to apply force delete on selected virtual machines). Repeat the same process for "NetworkWatcherRG" and you are done.
 </p>
 <br />
